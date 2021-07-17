@@ -1,4 +1,4 @@
-
+# Object representing 3D box
 class Box
 	attr_accessor :width, :height, :depth, :volume, :surface_area
 
@@ -11,6 +11,7 @@ class Box
 		set_volume
 	end
 
+	# Function to calculate surface area
 	def set_surface_area
 		@surface_area =
 		(@width * @height * 2) + 
@@ -18,6 +19,7 @@ class Box
 		(@width * @depth * 2)
 	end
 
+	# Function to calculate volume
 	def set_volume
 		@volume = @width * @height * @depth
 	end
